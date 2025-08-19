@@ -2,7 +2,7 @@ import path from "path"
 
 import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
-import { imagetools } from 'vite-imagetools';
+import { setupPlugins } from '@responsive-image/vite-plugin';
 
 const BASE = '/vitepress-test/'
 
@@ -43,7 +43,16 @@ export default defineConfig({
       href: BASE + 'vitepress-logo-mini.png',
     }]],
   vite: {
-      plugins: [tailwindcss(), imagetools()],
+      plugins: [
+        tailwindcss(),
+        setupPlugins({
+                // Any import that contains `response` in the name
+                // is handled by the plugin.
+                include: /\?.*responsive.*$/,
+                w: [900, 400],
+                format: ['avif'],
+            }),
+      ],
       resolve: {
           alias: {
               '@': path.resolve(__dirname, "../docs/static"),
