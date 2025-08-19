@@ -1,3 +1,4 @@
+import AbstractBlueStack from '@/images/abstract-blue-stack.avif?w=900;400'
 import BirdOnTree from '@/images/bird-on-tree.jpg?w=900;400'
 import RoadInTheForest from '@/images/road-in-the-forest.avif?w=900;400'
 import ForestSprout from '@/images/forest-sprout.avif?w=900;400'
@@ -5,11 +6,17 @@ import ForestSprout from '@/images/forest-sprout.avif?w=900;400'
 // To test the build without vite-imagetools comment the above imports and
 // remove the comments for the following lines.
 //
+// const AbstractBlueStack = ['', '']
 // const BirdOnTree = ['', '']
 // const RoadInTheForest = ['', '']
 // const ForestSprout = ['', '']
 
 export const images = {
+    'abstract-blue-stack': {
+        'alt': 'Abstract stack of blue rectangles',
+        'main': AbstractBlueStack[0],
+        'thumb': AbstractBlueStack[1],
+    },
     'bird-on-tree': {
         'alt': 'Bird on a tree branch with a blurred background',
         'main': BirdOnTree[0],
