@@ -25,7 +25,7 @@ const pageNotFound = {
     ],
 }
 
-const BASE = '/sub-site/'
+const BASE = '/vitepress-test/'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
