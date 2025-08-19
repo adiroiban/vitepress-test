@@ -4,6 +4,8 @@ import { defineConfig } from 'vitepress'
 import tailwindcss from '@tailwindcss/vite'
 import { imagetools } from 'vite-imagetools';
 
+const BASE = '/vitepress-test/'
+
 
 const pageNotFound = {
     title: 'This page does not exist',
@@ -25,7 +27,7 @@ const pageNotFound = {
     ],
 }
 
-const BASE = '/vitepress-test/'
+
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
