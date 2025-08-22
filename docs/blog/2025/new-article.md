@@ -14,4 +14,8 @@ summary: |
 
 Some **test** content.
 
+Check [BAR 2.0.0](/packages/release-bar-2.0.0) release
+
+See [all older news](/blog/index-2)
+
 
